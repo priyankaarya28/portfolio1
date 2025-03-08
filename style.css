@@ -1,0 +1,366 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background: #00000076;
+    color: white;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: violet;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?business,man') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-content h1 span {
+    color: green;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid green;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: red;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f8f8f8;
+}
+
+#contact h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+#contact h2 span {
+    color: red;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.contact-box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 50px 10%;
+    background: #111;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#projects h2 span {
+    color: red;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-box p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 10%;
+    background: #222;
+    color: white;
+}
+
+#skills h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#skills h2 span {
+    color: red;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill-box {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.skill-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.skill-box p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+Projects Section
+#projects {
+    text-align: center;
+    padding: 50px 0;
+    background: #333;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+/* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+} */
+ /* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* You can place this in your main CSS file or inside a <style> tag */
+footer {
+    background: #3a4650; /* Fallback background color */
+    /* Optional diagonal gradient */
+    background: linear-gradient(135deg, #3a4650 0%, #2f3a46 100%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; /* Or your preferred font */
+  }
+  
+  /* Footer title styling */
+  footer h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Highlight letters in red */
+  footer h1 .highlight {
+    color: #e53935; 
+  }
+  
+  /* Subtitle or tagline */
+  footer p.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  /* Social icons container */
+  .social-icons {
+    margin-bottom: 30px;
+  }
+  
+  /* Social icon links */
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect for icons */
+  .social-icons a:hover {
+    color: #e53935;
+    transform: scale(1.1);
+  }
+  
+  /* Copyright text */
+  footer p.copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
