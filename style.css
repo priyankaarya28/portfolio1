@@ -144,6 +144,47 @@ header {
         margin-bottom: 20px;
     }
 }
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .skills-container, .projects-container, .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+}
+   
+
+ 
 /* Projects Section */
 #projects {
     text-align: center;
